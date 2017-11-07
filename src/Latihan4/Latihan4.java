@@ -36,6 +36,8 @@ public class Latihan4 extends javax.swing.JFrame {
         buttonGroup7 = new javax.swing.ButtonGroup();
         buttonGroup8 = new javax.swing.ButtonGroup();
         buttonGroup9 = new javax.swing.ButtonGroup();
+        buttonGroup10 = new javax.swing.ButtonGroup();
+        buttonGroup11 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -329,6 +331,8 @@ public class Latihan4 extends javax.swing.JFrame {
     private javax.swing.JTextField Nama;
     private javax.swing.JTextArea TA;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup10;
+    private javax.swing.ButtonGroup buttonGroup11;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;

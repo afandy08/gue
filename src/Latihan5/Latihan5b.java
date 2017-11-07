@@ -14,8 +14,18 @@ public class Latihan5b extends javax.swing.JFrame {
     /**
      * Creates new form Latihan5b
      */
-    public Latihan5b() {
+    public Latihan5b(String nama, String absen, String kelas, String jurusan, String alamat) {
         initComponents();
+        Nama.setText(nama);
+        Absen.setText(absen);
+        Kelas.setText(kelas);
+        Jurusan.setText(jurusan);
+        Alamat.setText(alamat);
+        
+    }
+
+    Latihan5b() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -28,31 +38,33 @@ public class Latihan5b extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        Hasil1 = new javax.swing.JLabel();
-        Hasil2 = new javax.swing.JLabel();
-        Hasil3 = new javax.swing.JLabel();
-        Hasil4 = new javax.swing.JLabel();
-        Hasil5 = new javax.swing.JLabel();
+        Nama = new javax.swing.JLabel();
+        Absen = new javax.swing.JLabel();
+        Kelas = new javax.swing.JLabel();
+        Jurusan = new javax.swing.JLabel();
+        Alamat = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Amatic SC", 1, 36)); // NOI18N
-        jLabel1.setText("Hasil biodata");
+        jLabel1.setFont(new java.awt.Font("Amatic SC", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel1.setText("Hasil Biodata");
 
-        Hasil1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Hasil1.setText("Hasil 1");
+        Nama.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Nama.setText("Hasil 1");
 
-        Hasil2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Hasil2.setText("Hasil 2");
+        Absen.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Absen.setText("Hasil 2");
 
-        Hasil3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Hasil3.setText("Hasil 3");
+        Kelas.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Kelas.setText("Hasil 3");
 
-        Hasil4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Hasil4.setText("Hasil 4");
+        Jurusan.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Jurusan.setText("Hasil 4");
 
-        Hasil5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Hasil5.setText("Hasil 5");
+        Alamat.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Alamat.setText("Hasil 5");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,38 +73,40 @@ public class Latihan5b extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(117, 117, 117)
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Hasil5)
-                            .addComponent(Hasil3)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(Hasil2)
-                                .addComponent(Hasil1))
-                            .addComponent(Hasil4))))
-                .addContainerGap(134, Short.MAX_VALUE))
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Nama, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                                .addComponent(Absen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(Kelas, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(Alamat, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                                .addComponent(Jurusan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(132, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(34, 34, 34)
-                .addComponent(Hasil1)
-                .addGap(18, 18, 18)
-                .addComponent(Hasil2)
-                .addGap(18, 18, 18)
-                .addComponent(Hasil3)
-                .addGap(18, 18, 18)
-                .addComponent(Hasil4)
-                .addGap(18, 18, 18)
-                .addComponent(Hasil5)
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Absen, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Kelas, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Jurusan, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
+                .addComponent(Alamat, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(172, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(444, 450));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -131,11 +145,11 @@ public class Latihan5b extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Hasil1;
-    private javax.swing.JLabel Hasil2;
-    private javax.swing.JLabel Hasil3;
-    private javax.swing.JLabel Hasil4;
-    private javax.swing.JLabel Hasil5;
+    private javax.swing.JLabel Absen;
+    private javax.swing.JLabel Alamat;
+    private javax.swing.JLabel Jurusan;
+    private javax.swing.JLabel Kelas;
+    private javax.swing.JLabel Nama;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
